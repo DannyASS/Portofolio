@@ -1,0 +1,7 @@
+.image {
+    width: 240px; /* Sesuaikan lebar gambar dengan kebutuhan Anda */
+    height: 240px; /* Sesuaikan tinggi gambar dengan kebutuhan Anda */
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    overflow: hidden; /* Menghindari gambar yang melampaui batas lingkaran */
+    border: 5px solid #ddd;
+}
