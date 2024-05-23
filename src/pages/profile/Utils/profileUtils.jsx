@@ -26,7 +26,27 @@ const DataSkills = [
     }
 ]
 
+const DataSekolah = [
+    {
+        name : 'SD YPPSB 3',
+        jurusan : '-'
+    },
+    {
+        name : 'SMP YPPSB 3',
+        jurusan : '-'
+    },
+    {
+        name : 'SMA Negeri 2 Sangatta Utara',
+        jurusan : 'IPA'
+    },
+    {
+        name : 'Institut Teknologi Kalimantan',
+        jurusan : 'Teknik Elektro'
+    },
+
+]
 
 export {
-    DataSkills
+    DataSkills,
+    DataSekolah
 }

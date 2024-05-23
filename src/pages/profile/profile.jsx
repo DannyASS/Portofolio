@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Row } from 'react-bootstrap';
 import BlockPage from './components/blockUtama';
 import BlockRiwayat from './components/blockRiwayat';
+import HistoryStudy from './components/blockStudy';
 
 const ProfilePage = () => {
   return (
@@ -15,6 +16,7 @@ const ProfilePage = () => {
             </Col>
             <Col>
                 <BlockRiwayat />
+                <HistoryStudy />
             </Col>
         </Row>
   );
