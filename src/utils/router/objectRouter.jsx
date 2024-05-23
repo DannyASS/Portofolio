@@ -3,13 +3,14 @@ import ProfilePage from "../../pages/profile/profile"
 import Layout from "../../components/shared/layout"
 import LayoutPage from "../../components/shared/layout";
 import { Person2, Dashboard } from "@mui/icons-material";
+import DashboardPage from "../../pages/dashboard/dashboard";
 
 
 export const objectRouter = {
     dashboard : {
         title : "Dashboard",
         path : "/",
-        element : <ProfilePage />,
+        element : <DashboardPage />,
         navbar: true,
         icon: <Dashboard />
     },
