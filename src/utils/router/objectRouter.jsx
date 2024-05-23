@@ -1,15 +1,25 @@
 import { createBrowserRouter } from "react-router-dom"
 import ProfilePage from "../../pages/profile/profile"
 import Layout from "../../components/shared/layout"
+import LayoutPage from "../../components/shared/layout";
+import { Person2, Dashboard } from "@mui/icons-material";
 
 
 export const objectRouter = {
+    dashboard : {
+        title : "Dashboard",
+        path : "/",
+        element : <ProfilePage />,
+        navbar: true,
+        icon: <Dashboard />
+    },
     profile : {
         title : "Profile",
         path : "/Profile",
         element : <ProfilePage />,
-        navbar: true
-    }
+        navbar: true,
+        icon: <Person2 />
+    },
 }
 
 export const convertObjectToArray = () => {
@@ -26,6 +36,6 @@ export const convertObjectToArray = () => {
 };
 
 export const router = createBrowserRouter([{
-    Component: Layout,
+    Component: LayoutPage,
     children: convertObjectToArray()
 }])
