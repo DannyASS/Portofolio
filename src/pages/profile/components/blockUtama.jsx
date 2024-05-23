@@ -4,7 +4,7 @@ import '../style.scss'
 
 const BlockPage = () => {
     return(
-        <Container>
+        <Container className="border shadow p-3 rounded">
             <div>
                 <img className='image' src="/image/profile.jpg" alt="" />
             </div>

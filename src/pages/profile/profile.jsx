@@ -5,6 +5,7 @@ import { Container } from '@mui/material';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Row } from 'react-bootstrap';
 import BlockPage from './components/blockUtama';
+import BlockRiwayat from './components/blockRiwayat';
 
 const ProfilePage = () => {
   return (
@@ -13,7 +14,7 @@ const ProfilePage = () => {
                 <BlockPage />
             </Col>
             <Col>
-            
+                <BlockRiwayat />
             </Col>
         </Row>
   );

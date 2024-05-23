@@ -5,3 +5,23 @@
     overflow: hidden; /* Menghindari gambar yang melampaui batas lingkaran */
     border: 5px solid #ddd;
 }
+
+.blockRiwayat {
+    width: 100%;
+}
+
+.skills {
+    max-width: 40%;
+}
+
+.text-ellipsis {
+    white-space: normal;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    cursor: pointer; /* Kursor akan berubah saat mouse di atas teks */
+}
+
+.col .card_skills{
+    max-width: '171.517px';
+    max-height: '260.7px';
+}
