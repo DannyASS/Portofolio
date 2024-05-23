@@ -22,7 +22,7 @@ const DataSkills = [
     {
         name : 'Angular Js',
         src : "/image/Angular_logo.png",
-        desc : "skerangka kerja web berbasis JavaScript sumber terbuka dan gratis yang dihentikan untuk mengembangkan aplikasi satu halaman."
+        desc : "kerangka kerja web berbasis JavaScript sumber terbuka dan gratis untuk mengembangkan aplikasi satu halaman."
     }
 ]
 
