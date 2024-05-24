@@ -32,7 +32,7 @@ const DataSekolah = [
         jurusan : '-'
     },
     {
-        name : 'SMP YPPSB 3',
+        name : 'SMP YPPSB',
         jurusan : '-'
     },
     {

@@ -23,6 +23,7 @@ const HistoryStudy = () => {
                         {data.map((item) => {
                             return(
                                 <Col>
+                                    <AccountBalance className="pt-1" />
                                     <Typography variant="button" display="block" gutterBottom>
                                         {item.name}
                                     </Typography>
