@@ -13,7 +13,7 @@ const Sidebar = () => {
             <div className="iconNav">
                 <Widgets />
             </div>            
-            <Menu theme="dark" mode="inline">
+            <Menu theme="dark">
                 {dataMenu.map((item)=> {
                     return(
                         <Menu.Item key={item.title} icon={item.icon}>
