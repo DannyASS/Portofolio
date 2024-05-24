@@ -9,6 +9,7 @@ import BlockRiwayat from './components/blockRiwayat';
 import HistoryStudy from './components/blockStudy';
 import BlockRewards from './components/blockRewards';
 import BlockOrganisasi from './components/blockOrganisasi';
+import BlockMedSos from './components/blockMedSos';
 
 const ProfilePage = () => {
   return (
@@ -21,6 +22,7 @@ const ProfilePage = () => {
                 <HistoryStudy />
                 <BlockRewards />
                 <BlockOrganisasi />
+                <BlockMedSos />
             </Col>
         </Row>
   );

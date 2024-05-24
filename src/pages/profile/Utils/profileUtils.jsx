@@ -1,3 +1,5 @@
+import { Email, Instagram, LinkedIn, WhatsApp } from "@mui/icons-material"
+
 const DataSkills = [
     {
         name : '.Net',
@@ -52,7 +54,7 @@ const DataPenghargaan = [
         tingkat : 'Provinsi'
     },
     {
-        name : 'Peserta Kontes Robo Sumo',
+        name : 'Peserta Kontes Robot Sumo',
         tingkat : 'Nasional'
     },
     {
@@ -72,9 +74,35 @@ const DataOrganisasi = [
     }
 ]
 
+const DataMedSos = [
+    {
+        name : 'Instagram',
+        icon : <Instagram />,
+        akun : '@dannyanthoniyo',
+        link : 'https://www.instagram.com/dannyanthoniyo/'
+    },
+    {
+        name : 'LinkedIn',
+        icon : <LinkedIn />,
+        akun : 'dannyas21',
+        link : 'https://www.linkedin.com/in/dannyas21/'
+    },
+    {
+        name : 'WhatsApp',
+        icon : <WhatsApp />,
+        akun : '+6282254085005'
+    },
+    {
+        name : 'Email',
+        icon : <Email />,
+        akun : 'Dannyanthoniyo@gmail.com'
+    }
+]
+
 export {
     DataSkills,
     DataSekolah,
     DataPenghargaan,
-    DataOrganisasi
+    DataOrganisasi,
+    DataMedSos
 }
