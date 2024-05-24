@@ -29,7 +29,7 @@ const BlockRewards = () => {
                     <Row>
                         {data.map((item,index) => {
                             return(
-                                <Col onClick={() =>handleClickRewards(index)} className={'p-3 tittleRewards rounded '+ (reward == index? 'tittleRewardsClick' : '')}>
+                                <Col key={index} onClick={() =>handleClickRewards(index)} className={'tittleRewards rounded '+ (reward == index? 'tittleRewardsClick' : '')}>
                                     <EmojiEvents color={reward == index? 'primary' : ''}/>
                                     <Typography color={reward == index ? theme.palette.primary.dark : theme.palette.primary.main} variant={reward == index ? 'h6' : "button"} display="block" gutterBottom>
                                         {item.name}

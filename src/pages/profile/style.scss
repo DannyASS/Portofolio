@@ -22,18 +22,27 @@
 }
 
 .tittleRewards:hover {
+    padding: 1rem;
     cursor: pointer;
     background-color: #daedfc;
 }
 
 .tittleRewardsClick {
+    padding: 1rem;
     cursor: pointer;
     background-color: #daedfc;
     box-shadow: 0 0 10px #0070C0;
 }
-
+.Medsos:hover {
+    padding: 1rem;
+    cursor: pointer;
+}
 .boldReward {
     font-weight: bold;
+}
+.linkMedsos{
+    color: black;
+    text-decoration: none;
 }
 // .row .card_skills :hover{
 //     background-color: #00a6fb;

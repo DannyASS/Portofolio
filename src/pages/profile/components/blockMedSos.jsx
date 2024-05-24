@@ -2,39 +2,57 @@ import { ExpandMore, Public } from "@mui/icons-material";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import { Col, Row } from "react-bootstrap";
 import { DataMedSos } from "../Utils/profileUtils";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import EmailEngine from "../../../components/partial/emailEngine";
 
 const BlockMedSos = () => {
     const data = DataMedSos;
+    const [stateEmail, setStateEmail] = useState(false);
+
+    const handlingEmail = (data) => {
+        if(data.name == 'Email') return setStateEmail(true);
+    }
+
+    const handlingClose = (data) => {
+        if(data == null) return null;
+        return setStateEmail(data)
+    }
     return(
-        <Accordion className="mt-2">
-                <AccordionSummary
-                    expandIcon = {<ExpandMore />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                >
-                    <Public className="pt-2" />
-                    <Typography variant="h6">
-                        Media Sosial
-                    </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Row>
-                        {data.map((item) => {
-                            return(
-                                <Col>
-                                    {item.icon}
-                                    <Typography variant="button" display="block" gutterBottom>
-                                        {item.name}
-                                    </Typography>
-                                    <Typography variant="caption" display="block" gutterBottom>
-                                        {`(${item.akun})`}
-                                    </Typography>
-                                </Col>
-                            )
-                        })}
-                    </Row>
-                </AccordionDetails>
-        </Accordion>
+        <div>
+            <EmailEngine stateEmail={stateEmail} callback={handlingClose}/>
+            <Accordion className="mt-2">
+                    <AccordionSummary
+                        expandIcon = {<ExpandMore />}
+                        aria-controls="panel1-content"
+                        id="panel1-header"
+                    >
+                        <Public className="pt-2" />
+                        <Typography variant="h6">
+                            Media Sosial
+                        </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Row>
+                            {data.map((item) => {
+                                return(
+                                    <Col key={item.name} className="Medsos">
+                                        <Link onClick={() => handlingEmail(item)} className="linkMedsos" to={item.link ? item.link : null }>
+                                            {item.icon}
+                                            <Typography variant="button" display="block" gutterBottom>
+                                                {item.name}
+                                            </Typography>
+                                            {/* <Typography variant="caption" display="block" gutterBottom>
+                                                {`(${item.akun})`}
+                                            </Typography> */}
+                                        </Link>
+                                    </Col>
+                                )
+                            })}
+                        </Row>
+                    </AccordionDetails>
+            </Accordion>
+        </div>
     )
 }
 

@@ -90,12 +90,14 @@ const DataMedSos = [
     {
         name : 'WhatsApp',
         icon : <WhatsApp />,
-        akun : '+6282254085005'
+        akun : '+6282254085005',
+        link : 'https://wa.me/6282254085005'
     },
     {
         name : 'Email',
         icon : <Email />,
-        akun : 'Dannyanthoniyo@gmail.com'
+        akun : 'Dannyanthoniyo@gmail.com',
+        link : ''
     }
 ]
 
