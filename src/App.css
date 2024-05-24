@@ -23,3 +23,14 @@
 .linkMenu {
   text-decoration: none;
 }
+
+.dashboardContent {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.actionCol {
+  width: 500px;
+}

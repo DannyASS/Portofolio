@@ -1,11 +1,12 @@
 import { Container, Typography } from "@mui/material"
+import IntroAnimation from "../../components/shared/introWeb";
+import { Berita } from "./utils/dashboardUtils";
 
 const DashboardPage = () => {
+    const dataBerita = Berita
     return(
         <Container>
-            <Typography variant="h1">
-                Selamat datang
-            </Typography>
+            <IntroAnimation initialBerita={dataBerita} />
         </Container>
     )
 }
