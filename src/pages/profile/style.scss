@@ -21,6 +21,20 @@
     cursor: pointer; /* Kursor akan berubah saat mouse di atas teks */
 }
 
+.tittleRewards:hover {
+    cursor: pointer;
+    background-color: #daedfc;
+}
+
+.tittleRewardsClick {
+    cursor: pointer;
+    background-color: #daedfc;
+    box-shadow: 0 0 10px #0070C0;
+}
+
+.boldReward {
+    font-weight: bold;
+}
 // .row .card_skills :hover{
 //     background-color: #00a6fb;
 // }

@@ -46,7 +46,35 @@ const DataSekolah = [
 
 ]
 
+const DataPenghargaan = [
+    {
+        name : 'Juara 2 Kontes Robot Cerdas',
+        tingkat : 'Provinsi'
+    },
+    {
+        name : 'Peserta Kontes Robo Sumo',
+        tingkat : 'Nasional'
+    },
+    {
+        name : 'Peserta Kontes Kapal Cepat Tak Berawak Nasional',
+        tingkat : 'Nasional'
+    }
+]
+
+const DataOrganisasi = [
+    {
+        name : 'Persekutuan Mahasiswa Kristen',
+        tingkat : 'Mahasiswa'
+    },
+    {
+        name : 'Osis SMA Negeri 2',
+        tingkat : 'SMA'
+    }
+]
+
 export {
     DataSkills,
-    DataSekolah
+    DataSekolah,
+    DataPenghargaan,
+    DataOrganisasi
 }

@@ -15,7 +15,7 @@ const BlockPage = () => {
                 <div className="card-body">
                 <h5 className="card-title">Danny Anthonyo Sattu Sailo</h5>
                 <h6 className="card-subtitle mb-2 text-muted">Software Engineer</h6>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="card-text">Saya seorang junior developer .NET yang berdedikasi dalam mengembangkan aplikasi berbasis web menggunakan teknologi .NET. Saya memiliki pengetahuan tentang javascript, React JS, Jquery, bahasa pemograman C# dan kerangka Kerja ASP.Net. Saya telah mengikuti beberapa project pegembangan perangkat lunak menggunakan teknologi .Net</p>
                 </div>
             </div>
         </Container>

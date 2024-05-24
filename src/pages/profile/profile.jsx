@@ -7,6 +7,8 @@ import { Col, Row } from 'react-bootstrap';
 import BlockPage from './components/blockUtama';
 import BlockRiwayat from './components/blockRiwayat';
 import HistoryStudy from './components/blockStudy';
+import BlockRewards from './components/blockRewards';
+import BlockOrganisasi from './components/blockOrganisasi';
 
 const ProfilePage = () => {
   return (
@@ -17,6 +19,8 @@ const ProfilePage = () => {
             <Col>
                 <BlockRiwayat />
                 <HistoryStudy />
+                <BlockRewards />
+                <BlockOrganisasi />
             </Col>
         </Row>
   );

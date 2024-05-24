@@ -12,7 +12,7 @@ const BlockRiwayat = () => {
     },[])
 
     return(
-        <Accordion>
+        <Accordion className="mt-2">
             <AccordionSummary
                 expandIcon ={<ExpandMore />}
                 aria-controls="panel1-content"

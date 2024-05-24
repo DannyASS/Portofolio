@@ -1,21 +1,20 @@
-import { AccountBalance, ExpandMore } from "@mui/icons-material"
-import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material"
-import { Col, Container, Row } from "react-bootstrap"
-import { DataSekolah } from "../Utils/profileUtils"
-import { theme } from "../../../halpers/colors"
+import { ExpandMore, PeopleAlt } from "@mui/icons-material";
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
+import { Col, Row } from "react-bootstrap";
+import { DataOrganisasi } from "../Utils/profileUtils";
 
-const HistoryStudy = () => {
-    const data = DataSekolah
-    return (
+const BlockOrganisasi = () => {
+    const data = DataOrganisasi;
+    return(
         <Accordion className="mt-2">
                 <AccordionSummary
                     expandIcon = {<ExpandMore />}
                     aria-controls="panel1-content"
                     id="panel1-header"
                 >
-                    <AccountBalance className="pt-2" />
+                    <PeopleAlt className="pt-2" />
                     <Typography variant="h6">
-                        Riwayat Sekolah
+                        Riwayat Organisasi
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -23,11 +22,12 @@ const HistoryStudy = () => {
                         {data.map((item) => {
                             return(
                                 <Col>
+                                    <PeopleAlt />
                                     <Typography variant="button" display="block" gutterBottom>
                                         {item.name}
                                     </Typography>
                                     <Typography variant="caption" display="block" gutterBottom>
-                                        {`(${item.jurusan})`}
+                                        {`(${item.tingkat})`}
                                     </Typography>
                                 </Col>
                             )
@@ -38,4 +38,5 @@ const HistoryStudy = () => {
     )
 }
 
-export default HistoryStudy
+
+export default BlockOrganisasi;
