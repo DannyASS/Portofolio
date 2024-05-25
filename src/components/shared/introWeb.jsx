@@ -1,86 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Typography } from '@mui/material';
+import WelcomeTrans from './subComponent/welcome';
+import ActivityTrans from './subComponent/Activity';
+import ProfileDashboard from './subComponent/proDash';
 
 const IntroAnimation = ({initialBerita}) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(1);
+  const [counterTime, setCounterTime] = useState(0);
+  const setTime = [5000, 10000, 5000]
+
 
   // Toggle visibility every 3 seconds
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(true);
-    }, 3000);
-    return () => clearTimeout(timeout);
-  }, []);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsVisible(2);
+  //   }, 2000);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   useEffect(() => {
-    if (isVisible) {        
+    let counter = isVisible + 1;
+    if (isVisible < 5) {
+        console.log("cek deh : ", counter)        
         const timeout = setTimeout(() => {
-            setIsVisible(false);
-        }, 5000);
+            if (counter % 2 == 1) {              
+              setCounterTime(counterTime + 1)
+            }
+            setIsVisible(counter);
+        }, (isVisible % 2 == 1? setTime[counterTime] : 3000));
         return () => clearTimeout(timeout);   
+
     }
   }, [isVisible]);
 
   return (
     <AnimatePresence>
-      {isVisible && (
-        <motion.div
-          key="intro"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, delay : 0.5 }}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}
-        >
-          <motion.h1
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            Selamat Datang!
-          </motion.h1>
-          <motion.p
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            Enjoy Explore My CV...
-          </motion.p>
-        </motion.div>
-      )}
-      {!isVisible && (
-            <motion.div
-                key={"list"}
-                className='dashboardContent'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay : 1 }}
-            >
-                <motion.div className='row'>
-                    <motion.h1
-                        initial={{ y: -50, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 5, delay: 6 }}
-                    >
-                        Aktifitas
-                    </motion.h1>
-                    {initialBerita.map((item, index) => {
-                        return (
-                            <motion.div 
-                            className='col rounded shadow p-3 m-3 actionCol'
-                            initial={{ y: -200, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 5, delay: (1.5 * index) }}
-                            >
-                                    <Typography variant='h6'>{item.name}</Typography>
-                                    <Typography variant='caption'>{item.deskripsi}</Typography>
-                            </motion.div>
-                        )
-                    })}
-                </motion.div>
-            </motion.div>
-      )}
+      {(isVisible == 1) && (<WelcomeTrans />)}
+      {(isVisible == 5) && (<ActivityTrans initialBerita={initialBerita}/>)}
+      {(isVisible == 3) && (<ProfileDashboard />)}
     </AnimatePresence>
   );
 };

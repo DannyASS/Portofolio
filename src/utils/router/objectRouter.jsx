@@ -8,7 +8,7 @@ import DashboardPage from "../../pages/dashboard/dashboard";
 
 export const objectRouter = {
     dashboard : {
-        title : "Dashboard",
+        title : "Home",
         path : "/",
         element : <DashboardPage />,
         navbar: true,
