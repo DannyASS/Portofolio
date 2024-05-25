@@ -18,6 +18,15 @@
     white-space: normal;
     overflow: scroll;
     text-overflow: ellipsis;
+    visibility: hidden;
+    cursor: pointer; /* Kursor akan berubah saat mouse di atas teks */
+}
+
+.text-ellipsis:hover {
+    white-space: normal;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    visibility:collapse ;
     cursor: pointer; /* Kursor akan berubah saat mouse di atas teks */
 }
 

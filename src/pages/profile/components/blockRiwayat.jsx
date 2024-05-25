@@ -26,18 +26,12 @@ const BlockRiwayat = () => {
                     {skills.map((item,index) => { 
                         return (
                             <Col className="mt-3 card_skills" xs={4}>
-                                <Card style={{
-                                    width : '171.517px',
-                                    height : '260.7px'
-                                }}>
+                                <Card>
                                     <CardContent>
                                         <div className="pt-2">
                                             <img className="skills" src={item.src}></img>
                                         </div>
                                         <Typography>{item.name}</Typography>
-                                        <Typography id={index} className="text-ellipsis" variant="body2" color="text.secondary">
-                                            {item.desc}
-                                        </Typography>
                                     </CardContent>
                                 </Card>
                             </Col>
