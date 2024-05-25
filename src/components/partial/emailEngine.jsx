@@ -11,7 +11,6 @@ const EmailEngine = ({stateEmail,  callback}) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        setKirim(true)
 
         await emailjs
             .sendForm('service_hkplbp5', 'template_tmefrun', form.current, {
@@ -48,15 +47,15 @@ const EmailEngine = ({stateEmail,  callback}) => {
                 <Modal.Body>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control name="user_name" type="text" placeholder="Danny" />
+                        <Form.Control required name="user_name" type="text" placeholder="Danny" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control name="email" type="email" placeholder="name@example.com" />
+                        <Form.Control required name="email" type="email" placeholder="name@example.com" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Body</Form.Label>
-                        <Form.Control  name="message" as="textarea" rows={3} />
+                        <Form.Control required  name="message" as="textarea" rows={3} />
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>

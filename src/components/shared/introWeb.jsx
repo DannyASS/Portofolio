@@ -45,7 +45,7 @@ const IntroAnimation = ({initialBerita}) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            Explore My CV...
+            Enjoy Explore My CV...
           </motion.p>
         </motion.div>
       )}
@@ -58,6 +58,13 @@ const IntroAnimation = ({initialBerita}) => {
                 transition={{ duration: 1.5, delay : 1 }}
             >
                 <motion.div className='row'>
+                    <motion.h1
+                        initial={{ y: -50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 5, delay: 6 }}
+                    >
+                        Aktifitas
+                    </motion.h1>
                     {initialBerita.map((item, index) => {
                         return (
                             <motion.div 

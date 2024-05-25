@@ -1,20 +1,16 @@
 const Berita = [
     {
-        name : "berita 1",
-        deskripsi : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium quam suscipit similique minus quia consectetur qui, asperiores animi, quaerat aperiam iste dolorum numquam. Laudantium enim quas expedita fugit ex?'
+        name : "Wisudawan Terbaik",
+        deskripsi : 'Balikpapan – Institut Teknologi Kalimantan saat ini telah memasuki proses wisuda ke-12. Pada wisuda ke-12 kali ini tentunya terdapat mahasiswa/i yang meraih Kegiatan terbanyak dan tertinggi. Peraih SK2PM terbaik diantaranya adalah  Samuel Dharmawan dan Danny Anthonyo Sattu Sailo',
     },
     {
-        name : "berita 2",
-        deskripsi : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium quam suscipit similique minus quia consectetur qui, asperiores animi, quaerat aperiam iste dolorum numquam. Laudantium enim quas expedita fugit ex?'
+        name : "Go-Live Ya-Hala",
+        deskripsi : 'Membuat dan menambahkan fitur bahasa Arab ke sistem. AYO by SRC merupakan ekosistem digital yang menghubungkan mitra grosir, toko kelontong, dan pelanggan sebagai solusi digital untuk pengalaman berbelanja yang lebih mudah dan nyaman.'
     },
     {
-        name : "berita 3",
-        deskripsi : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium quam suscipit similique minus quia consectetur qui, asperiores animi, quaerat aperiam iste dolorum numquam. Laudantium enim quas expedita fugit ex?'
-    },
-    {
-        name : "berita 4",
-        deskripsi : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium quam suscipit similique minus quia consectetur qui, asperiores animi, quaerat aperiam iste dolorum numquam. Laudantium enim quas expedita fugit ex?'
-    },
+        name : "Pelatihan Node Js",
+        deskripsi : 'Ikut pelatihan workshop Node.js yang diadakan oleh Dunia Coding'
+    }
 ]
 
 
