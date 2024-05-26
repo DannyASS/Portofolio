@@ -2,9 +2,10 @@ import { createBrowserRouter } from "react-router-dom"
 import ProfilePage from "../../pages/profile/profile"
 import Layout from "../../components/shared/layout"
 import LayoutPage from "../../components/shared/layout";
-import { Person2, Dashboard } from "@mui/icons-material";
+import { Person2, Dashboard, Web } from "@mui/icons-material";
 import DashboardPage from "../../pages/dashboard/dashboard";
 import { LangConfig } from "../../language/langConfig";
+import MyProject from "../../pages/projects/project";
 
 const ls = LangConfig().menu
 export const objectRouter = {
@@ -21,6 +22,13 @@ export const objectRouter = {
         element : <ProfilePage />,
         navbar: true,
         icon: <Person2 />
+    },
+    project : {
+        title : ls.project,
+        path : "/Project",
+        element : <MyProject />,
+        navbar: true,
+        icon: <Web />
     },
 }
 

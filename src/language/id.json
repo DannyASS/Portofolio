@@ -73,12 +73,14 @@
     },
     "menu" : {
         "home" : "Pengenalan",
-        "profile" : "Profil"
+        "profile" : "Profil",
+        "project" : "Projek"
     },
     "language" : {
       "id" : "Bahasa",
       "en" : "Inggris",
       "jpn" : "Jepang",
       "title1" : "Bahasa"
-    }
+    },
+    "commingSoon" : "Segera Hadir"
 }
