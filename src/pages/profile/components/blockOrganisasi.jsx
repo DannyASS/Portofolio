@@ -2,9 +2,11 @@ import { ExpandMore, PeopleAlt } from "@mui/icons-material";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import { Col, Row } from "react-bootstrap";
 import { DataOrganisasi } from "../Utils/profileUtils";
+import { LangConfig } from "../../../language/langConfig";
 
 const BlockOrganisasi = () => {
     const data = DataOrganisasi;
+    const ls = LangConfig().profile
     return(
         <Accordion className="mt-2">
                 <AccordionSummary
@@ -14,7 +16,8 @@ const BlockOrganisasi = () => {
                 >
                     <PeopleAlt className="pt-2" />
                     <Typography variant="h6">
-                        Riwayat Organisasi
+                        {/* Riwayat Organisasi */}
+                        {ls.title5}
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>

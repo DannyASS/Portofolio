@@ -5,19 +5,22 @@ import { DataMedSos } from "../Utils/profileUtils";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import EmailEngine from "../../../components/partial/emailEngine";
+import { LangConfig } from "../../../language/langConfig";
 
 const BlockMedSos = () => {
+    const ls = LangConfig().profile
     const data = DataMedSos;
     const [stateEmail, setStateEmail] = useState(false);
-
+    
     const handlingEmail = (data) => {
-        if(data.name == 'Email') return setStateEmail(true);
+        if(data.name == ls.medSos.name4) return setStateEmail(true);
     }
 
     const handlingClose = (data) => {
         if(data == null) return null;
         return setStateEmail(data)
     }
+
     return(
         <div>
             <EmailEngine stateEmail={stateEmail} callback={handlingClose}/>
@@ -29,7 +32,8 @@ const BlockMedSos = () => {
                     >
                         <Public className="pt-2" />
                         <Typography variant="h6">
-                            Media Sosial
+                            {/* Media Sosial */}
+                            {ls.title6}
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>

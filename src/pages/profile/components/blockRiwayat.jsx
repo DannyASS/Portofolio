@@ -4,9 +4,11 @@ import { Col, Row } from "react-bootstrap"
 import '../style.scss'
 import { DataSkills } from "../Utils/profileUtils"
 import { ExpandMore, Extension } from "@mui/icons-material"
+import { LangConfig } from "../../../language/langConfig"
 
 const BlockRiwayat = () => {
     const skills = DataSkills
+    const ls = LangConfig().profile
     useEffect(() => {
         console.log(skills)
     },[])
@@ -19,7 +21,10 @@ const BlockRiwayat = () => {
                 id="panel1-header"
             >
                 <Extension className="pt-2" />
-                <Typography variant="h6">Keahlian</Typography>
+                <Typography variant="h6">
+                    {/* Keahlian */}
+                    {ls.title3}
+                </Typography>
             </AccordionSummary>
             <div className="border shadow rounded p-3">
                 <Row className="pt-2">

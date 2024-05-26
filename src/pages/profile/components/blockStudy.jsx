@@ -3,9 +3,11 @@ import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/
 import { Col, Container, Row } from "react-bootstrap"
 import { DataSekolah } from "../Utils/profileUtils"
 import { theme } from "../../../halpers/colors"
+import { LangConfig } from "../../../language/langConfig"
 
 const HistoryStudy = () => {
     const data = DataSekolah
+    const ls = LangConfig().profile
     return (
         <Accordion className="mt-2">
                 <AccordionSummary
@@ -15,7 +17,8 @@ const HistoryStudy = () => {
                 >
                     <AccountBalance className="pt-2" />
                     <Typography variant="h6">
-                        Riwayat Sekolah
+                        {/* Riwayat Sekolah */}
+                        {ls.title2}
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>

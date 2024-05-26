@@ -18,5 +18,57 @@
         "welcome" : "Selamat Datang!",
         "p1" : "Enjoy Explore My CV...",
         "h1" : "Aktifitas"
+    },
+    "profile" : {
+        "title1" : "Profile Saya",
+        "title2" : "Riwayat Sekolah",
+        "title3" : "Keahlian",
+        "title4" : "Riwayat Prestasi",
+        "title5" : "Riwayat Organisasi",
+        "title6" : "Media Sosial",
+        "dataSkills" : {
+            "desc1" : "Project : Learning Development System Astra Honda motor, Pembimbing Angkatan Binus",
+            "desc2" : "Project : Pembimbing Angkatan Binus, Brian AYO SRC ",
+            "desc3" : "Project : Pembimbing Angkatan",
+            "desc4" : "Project : Pembimbing Angkatan",
+            "desc5" : "Project : Ya-Hala Ayo SRC Jordan"
+        },
+        "dataSekolah" : {
+            "name1" : "SD YPPSB 3",
+            "name2" : "SMP YPPSB",
+            "name3" : "SMA Negeri 2 Sangatta Utara",
+            "name4" : "Institut Teknologi Kalimantan",
+            "desc1" : "Teknik Elektro"
+        },
+        "dataPenghargaan" : {
+            "name1" : "Juara 2 Kontes Robot Cerdas",
+            "name2" : "Peserta Kontes Robot Sumo",
+            "name3" : "Peserta Kontes Kapal Cepat Tak Berawak Nasional",
+            "desc1" : "Perlombaan Line Follower yang diadakan oleh Politeknik Negeri Samarinda",
+            "desc2" : "Perlombaan Robot Sumo yang diadakan oleh Ubiversitas Gadjah Mada",
+            "desc3" : "Perlombaan Kapal Cepat Tak Berawak Nasional yang diadakan tiap tahun oleh Balai Pengembangan Talenta Indonesia-Pusat Prestasi Nasional-Kementerian Pendidikan dan Kebudayaan Indonesia cabang autonomous surface vehicle yang di adakan UMM",
+            "tingkat1" : "Nasional",
+            "tingkat2" : "Provinsi"
+        },
+        "dataOrganisasi" : {
+            "name1" : "Persekutuan Mahasiswa Kristen",
+            "name2" : "Osis SMA Negeri 2",
+            "tingkat1" : "Mahasiswa",
+            "tingkat12" : "SMA"
+        },
+        "descProf" : "Pengembang Fullstack",
+        "medSos" : {
+            "name1" : "Instagram",
+            "name2" : "LinkedIn",
+            "name3" : "WhatsApp",
+            "name4" : "Email"
+        },
+        "email" : {
+            "name" : "Nama :",
+            "Email" : "Alamat Email Anda :",
+            "Body" : "Isi Email:"
+        },
+        "button1" : "Tutup",
+        "button2" : "Kirim"
     }
 }

@@ -4,12 +4,14 @@ import { Button, Col, Modal, Row } from "react-bootstrap";
 import { DataPenghargaan } from "../Utils/profileUtils";
 import { useEffect, useState } from "react";
 import { theme } from "../../../halpers/colors"
+import { LangConfig } from "../../../language/langConfig";
 
 const BlockRewards = () => {
     const [reward, setReward] = useState();
     const [itemReward, setItemReward] = useState(null);
     const [show,setShow] = useState(false)
     const data = DataPenghargaan;
+    const ls = LangConfig().profile;
 
     const handleClickRewards = (item,index, close = false) => {
         if(close) return setShow(!show);
@@ -35,7 +37,10 @@ const BlockRewards = () => {
                                 {itemReward?.desc}
                             </Modal.Body>  
                             <Modal.Footer>
-                                <Button onClick={() => handleClickRewards(itemReward,reward, true)} variant="secondary">Close</Button>
+                                <Button onClick={() => handleClickRewards(itemReward,reward, true)} variant="secondary">
+                                    {/* Close */}
+                                    {ls.button1}
+                                </Button>
                             </Modal.Footer>
                         </Modal>
             <Accordion className="mt-2">
@@ -46,7 +51,8 @@ const BlockRewards = () => {
                     >
                         <EmojiEvents className="pt-2" />
                         <Typography variant="h6">
-                            Riwayat Prestasi
+                            {/* Riwayat Prestasi */}
+                            {ls.title4}
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>

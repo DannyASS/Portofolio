@@ -18,5 +18,57 @@
       "welcome": "Welcome!",
       "p1": "Enjoy Exploring My CV...",
       "h1" : "Activity"
-    }
+    },
+    "profile": {
+        "title1": "My Profile",
+        "title2": "Educational Background",
+        "title3": "Skills",
+        "title4": "Achievements",
+        "title5": "Organizational Experience",
+        "title6": "Social Media",
+        "dataSkills": {
+          "desc1": "Project : Learning Development System Astra Honda motor, Tutor of Binus Batch",
+          "desc2": "Project : Tutor of Binus Batch, Brian AYO SRC ",
+          "desc3": "Project : Tutor of Batch",
+          "desc4": "Project : Tutor of Batch",
+          "desc5": "Project : Ya-Hala Ayo SRC Jordan"
+        },
+        "dataSekolah": {
+          "name1": "SD YPPSB 3",
+          "name2": "SMP YPPSB",
+          "name3": "SMA Negeri 2 Sangatta Utara",
+          "name4": "Kalimantan Institute of Technology",
+          "desc1": "Electrical Engineering"
+        },
+        "dataPenghargaan": {
+          "name1": "2nd Place in Intelligent Robot Contest",
+          "name2": "Participant in Sumo Robot Contest",
+          "name3": "Participant in National Unmanned Fast Boat Contest",
+          "desc1": "Line Follower Race held by Samarinda State Polytechnic",
+          "desc2": "Sumo Robot Race held by Gadjah Mada University",
+          "desc3": "National Unmanned Fast Boat Race held annually by Indonesian Talent Development Agency-National Achievement Center-Ministry of Education and Culture of Indonesia branch autonomous surface vehicle held by UMM",
+          "tingkat1": "National",
+          "tingkat2": "Provincial"
+        },
+        "dataOrganisasi": {
+          "name1": "Fellowship of Christian Students",
+          "name2": "Student Council of SMA Negeri 2",
+          "tingkat1": "College",
+          "tingkat12": "High School"
+        },
+        "descProf" : "Fullstack Developer",
+        "medSos" : {
+            "name1" : "Instagram",
+            "name2" : "LinkedIn",
+            "name3" : "WhatsApp",
+            "name4" : "Email"
+        },
+        "email" : {
+            "name" : "Name :",
+            "Email" : "Your Email :",
+            "Body" : "Body :"
+        },
+        "button1" : "Close",
+        "button2" : "Send"
+      }
 }
