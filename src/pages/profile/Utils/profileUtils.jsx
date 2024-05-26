@@ -93,12 +93,12 @@ const DataMedSos = [
         akun : 'dannyas21',
         link : 'https://www.linkedin.com/in/dannyas21/'
     },
-    {
-        name : ls.medSos.name3,
-        icon : <WhatsApp />,
-        akun : '+6282254085005',
-        link : 'https://wa.me/6282254085005'
-    },
+    // {
+    //     name : ls.medSos.name3,
+    //     icon : <WhatsApp />,
+    //     akun : '+6282254085005',
+    //     link : 'https://wa.me/6282254085005'
+    // },
     {
         name : ls.medSos.name4,
         icon : <Email />,
