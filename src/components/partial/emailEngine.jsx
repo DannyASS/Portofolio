@@ -15,8 +15,8 @@ const EmailEngine = ({stateEmail,  callback}) => {
         event.preventDefault();
 
         await emailjs
-            .sendForm('service_hkplbp5', 'template_tmefrun', form.current, {
-                publicKey: 'uNZ-b-_iPZrb25kEv',
+            .sendForm(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY, form.current, {
+                publicKey: import.meta.env.VITE_PUBLIC_KEY,
             })
             .then(
                 () => {
