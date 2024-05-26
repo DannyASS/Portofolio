@@ -1,8 +1,8 @@
 import { Layout, Menu } from "antd"
-import { Container } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 import { convertObjectToArray } from "../../utils/router/objectRouter"
-import { Language, Navigation, Widgets } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Language, Logout, Navigation, Widgets } from "@mui/icons-material";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { LangConfig, language } from "../../language/langConfig";
 
@@ -12,12 +12,19 @@ const Sidebar = () => {
     const {Sider} = Layout
     const ls = LangConfig().language
     const LanguageData = language
+    const navigate = useNavigate();
 
     const handleChangeLanguage = (data) => {
         let codeLang = data;
         localStorage.removeItem('locale');
         localStorage.setItem('locale', codeLang);
         return window.location.reload();
+    }
+
+    const hanldeLogout = () => {
+        localStorage.removeItem('data')
+        localStorage.setItem('locale', 'id')
+        window.location.reload();
     }
 
     return(
@@ -47,6 +54,7 @@ const Sidebar = () => {
                     })}
                 </Menu.SubMenu>
             </Menu>
+            <Button onClick={hanldeLogout} id="logout"><Logout style={{width : '80%'}}/></Button>
         </Sider>
     )
 }

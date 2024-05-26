@@ -2,29 +2,24 @@
 import { UserOutlined } from '@ant-design/icons';
 import { Form, Input, Select } from 'antd';
 import '../style.scss'
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import { LangConfig, language } from '../../../language/langConfig';
 import { useEffect, useState } from 'react';
 
 const FormLogin = () => {
     const navigate = useNavigate()
-    const ls = LangConfig().login
+    let ls = LangConfig().login
     const dataLs = language;
     const [selectValue, setSelectValue] = useState();
     const handleFinish = (event) => {
-        console.log("event :",event)
         localStorage.setItem('data', event.username);
-        navigate('/');
-        
+        return navigate('/');
     }
     const handleSelect = (data) => {
         localStorage.setItem('locale', data);
         window.location.reload()
     }
 
-    useEffect(() => {
-        console.log("masuk gak?");
-    },[selectValue])
     return(
         <Form
             name="normal_login"

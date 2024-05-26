@@ -38,3 +38,12 @@
 .logoDas {
   max-width: 40px;
 }
+
+#logout {
+  position: absolute;
+  top: 93%;
+  margin-left: 10px;
+  background-color: white;
+  border: white;
+  color: black;
+}

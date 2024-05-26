@@ -8,7 +8,7 @@ import ProfileDashboard from './subComponent/proDash';
 const IntroAnimation = ({initialBerita}) => {
   const [isVisible, setIsVisible] = useState(1);
   const [counterTime, setCounterTime] = useState(0);
-  const setTime = [5000, 10000, 5000]
+  const setTime = [5000, 30000, 5000]
 
 
   // Toggle visibility every 3 seconds
@@ -35,7 +35,7 @@ const IntroAnimation = ({initialBerita}) => {
   }, [isVisible]);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode='wait'>
       {(isVisible == 1) && (<WelcomeTrans />)}
       {(isVisible == 5) && (<ActivityTrans initialBerita={initialBerita}/>)}
       {(isVisible == 3) && (<ProfileDashboard />)}
