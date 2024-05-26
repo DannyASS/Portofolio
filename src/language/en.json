@@ -79,10 +79,14 @@
         "login" : "Login"
     },
     "language" : {
-    "id" : "Indonesian",
-    "en" : "English",
-    "jpn" : "Japan",
-    "title1" : "Language"
+        "id" : "Indonesian",
+        "en" : "English",
+        "jpn" : "Japan",
+        "title1" : "Language",
+        "button1" : "Close",
+        "button2" : "Log Out",
+        "tittle2" : "Log Out",
+        "desc1" : "Are you sure you want to log out?"
     },
     "commingSoon" : "Coming Soon",
     "login" : {

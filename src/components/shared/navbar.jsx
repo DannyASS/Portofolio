@@ -1,10 +1,11 @@
 import { Layout, Menu } from "antd"
-import { Button, Container } from "react-bootstrap"
+import { Button, Container, Modal } from "react-bootstrap"
 import { convertObjectToArray } from "../../utils/router/objectRouter"
 import { Language, Logout, Navigation, Widgets } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { LangConfig, language } from "../../language/langConfig";
+import { Typography } from "@mui/material";
 
 const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -12,7 +13,7 @@ const Sidebar = () => {
     const {Sider} = Layout
     const ls = LangConfig().language
     const LanguageData = language
-    const navigate = useNavigate();
+    const [show, setShow] = useState(false)
 
     const handleChangeLanguage = (data) => {
         let codeLang = data;
@@ -24,11 +25,28 @@ const Sidebar = () => {
     const hanldeLogout = () => {
         localStorage.removeItem('data')
         localStorage.setItem('locale', 'id')
+        setShow(false)
         window.location.reload();
+    }
+
+    const logoutModal = () => {
+        return setShow(true)
     }
 
     return(
         <Sider collapsed={collapsed} className="sideBar">
+            <Modal show={show}>
+                <Modal.Header>
+                    <Typography variant="h5">{ls.tittle2}</Typography>
+                </Modal.Header>
+                <Modal.Body>
+                    <Typography variant="caption">{ls.desc1}</Typography>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={() => setShow(false)} variant="secondary">{ls.button1}</Button>
+                    <Button onClick={hanldeLogout} variant="primary">{ls.button2}</Button>
+                </Modal.Footer>
+            </Modal>
             <div className="iconNav" onClick={() => setCollapsed(!collapsed)}>
                 <img className="logoDas" src="/image/programmer.png"/>
             </div>            
@@ -54,7 +72,7 @@ const Sidebar = () => {
                     })}
                 </Menu.SubMenu>
             </Menu>
-            <Button onClick={hanldeLogout} id="logout"><Logout style={{width : '80%'}}/></Button>
+            <Button onClick={logoutModal} id="logout"><Logout style={{width : '80%'}}/></Button>
         </Sider>
     )
 }

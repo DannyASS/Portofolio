@@ -16,7 +16,7 @@ const ProfileDashboard = () => {
         if(counter == 2) return setMotionko(counter)
         const timeout = setTimeout(() => {                
             setMotionko(counter);
-        },5000)
+        }, (counter == 2? 7000 : 5000)   )
         return () => clearTimeout(timeout);
     }
 
@@ -44,7 +44,7 @@ const ProfileDashboard = () => {
                                 key="1"
                                 initial= {{y : 50, opacity: 0}}
                                 animate = {{y: 0, opacity : 1}}
-                                transition={{duration: 1}}
+                                transition={{duration: 2, delay :3}}
                                 exit={{y : 10, opacity: 0, transition: {duration : 2, ease: 'easeOut'}}}
                                 onAnimationComplete={counterMotion}
                             >

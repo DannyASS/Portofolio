@@ -82,7 +82,9 @@
       "id" : "Bahasa",
       "en" : "Inggris",
       "jpn" : "Jepang",
-      "title1" : "Bahasa"
+      "title1" : "Bahasa",
+      "button1" : "Kembali",
+      "button2" : "Keluar"
     },
     "commingSoon" : "Segera Hadir",
     "login" : {
@@ -91,6 +93,9 @@
         "title1" : "Login",
         "error1" : "Mahon input nama pengguna!",
         "error2" : "Mohon pilih bahasa",
-        "button1" : "Masuk"
+        "button1" : "Masuk",
+        "tittle2" : "Keluar",
+        "desc1" : "Apakah Anda yakin ingin keluar?"
+
     }
 }
