@@ -15,7 +15,7 @@
         "Profile" : {
             "desc" : "Saya Danny Anthonyo seorang junior developer .NET yang berdedikasi dalam mengembangkan aplikasi berbasis web menggunakan teknologi .NET. Saya memiliki pengetahuan tentang javascript, React JS, Jquery, bahasa pemograman C# dan kerangka Kerja ASP.Net. Saya telah mengikuti beberapa project pegembangan perangkat lunak menggunakan teknologi .Net"
         },
-        "welcome" : "Selamat Datang!",
+        "welcome" : "Selamat Datang ",
         "p1" : "Enjoy Explore My CV...",
         "h1" : "Aktifitas"
     },
@@ -74,7 +74,8 @@
     "menu" : {
         "home" : "Pengenalan",
         "profile" : "Profil",
-        "project" : "Projek"
+        "project" : "Projek",
+        "login" : "Masuk"
     },
     "language" : {
       "id" : "Bahasa",
@@ -82,5 +83,13 @@
       "jpn" : "Jepang",
       "title1" : "Bahasa"
     },
-    "commingSoon" : "Segera Hadir"
+    "commingSoon" : "Segera Hadir",
+    "login" : {
+        "username" : "Nama pengguna",
+        "language" : "Bahasa",
+        "title1" : "Login",
+        "error1" : "Mahon input nama pengguna!",
+        "error2" : "Mohon pilih bahasa",
+        "button1" : "Masuk"
+    }
 }

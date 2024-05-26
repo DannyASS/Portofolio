@@ -15,7 +15,7 @@
       "Profile": {
         "desc": "I'm Danny Anthonyo, a dedicated junior .NET developer in developing web-based applications using .NET technology. I have knowledge of javascript, React JS, Jquery, C# programming language and ASP.Net Framework. I have participated in several software development projects using .Net technology."
       },
-      "welcome": "Welcome!",
+      "welcome": "Welcome ",
       "p1": "Enjoy Exploring My CV...",
       "h1" : "Activity"
     },
@@ -74,7 +74,8 @@
     "menu" : {
         "home" : "Introduction",
         "profile" : "Profile",
-        "project" : "Project"
+        "project" : "Project",
+        "login" : "Login"
     },
     "language" : {
     "id" : "Indonesian",
@@ -82,5 +83,13 @@
     "jpn" : "Japan",
     "title1" : "Language"
     },
-    "commingSoon" : "Coming Soon"
+    "commingSoon" : "Coming Soon",
+    "login" : {
+        "username" : "Username",
+        "language" : "Language",
+        "title1" : "Login",
+        "error1" : "Please input your Username!",
+        "error2" : "Please select language",
+        "button1" : "Log In"
+    }
 }

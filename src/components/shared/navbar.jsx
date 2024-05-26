@@ -26,7 +26,7 @@ const Sidebar = () => {
                 <img className="logoDas" src="/image/programmer.png"/>
             </div>            
             <Menu theme="dark">
-                {dataMenu.map((item)=> {
+                {dataMenu.filter((item) => item.hideMenu == false).map((item)=> {
                     return(
                         <Menu.Item key={item.title} icon={item.icon}>
                             <Link className="linkMenu" to={item.path}>{item.title}</Link>

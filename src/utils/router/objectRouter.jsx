@@ -6,6 +6,7 @@ import { Person2, Dashboard, Web } from "@mui/icons-material";
 import DashboardPage from "../../pages/dashboard/dashboard";
 import { LangConfig } from "../../language/langConfig";
 import MyProject from "../../pages/projects/project";
+import LoginPage from "../../pages/login/login";
 
 const ls = LangConfig().menu
 export const objectRouter = {
@@ -14,21 +15,32 @@ export const objectRouter = {
         path : "/",
         element : <DashboardPage />,
         navbar: true,
-        icon: <Dashboard />
+        icon: <Dashboard />,
+        hideMenu : false
     },
     profile : {
         title : ls.profile,
         path : "/Profile",
         element : <ProfilePage />,
         navbar: true,
-        icon: <Person2 />
+        icon: <Person2 />,
+        hideMenu : false
     },
     project : {
         title : ls.project,
         path : "/Project",
         element : <MyProject />,
         navbar: true,
-        icon: <Web />
+        icon: <Web />,
+        hideMenu : false
+    },
+    login : {
+        title : ls.login,
+        path : "/Login",
+        element : <LoginPage />,
+        navbar: false,
+        icon: <Web />,
+        hideMenu : true
     },
 }
 

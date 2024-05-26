@@ -15,7 +15,7 @@
         "Profile" : {
             "desc" : "私はDanny Anthonyoです。.NET技術を使用したWebベースのアプリケーションの開発に専念しているジュニア.NET開発者です。javascript、React JS、Jquery、C#プログラミング言語、ASP.Netフレームワークの知識があります。.Net技術を使用したソフトウェア開発プロジェクトにいくつか参加してきました。"
         },
-        "welcome" : "ようこそ！",
+        "welcome" : "ようこそ ",
         "p1" : "履歴書探索を楽しもう",
         "h1" : "アクティビティ"
     },
@@ -74,7 +74,8 @@
     "menu" : {
         "home" : "はじめに",
         "profile" : "プロフィール",
-        "project" : "プロジェクト"
+        "project" : "プロジェクト",
+        "login" : "ログイン"
     },
     "language" : {
         "id" : "インドネシア",
@@ -82,5 +83,13 @@
         "jpn" : "日本語",
         "title1" : "言語"
     },
-    "commingSoon" : "近日公開"
+    "commingSoon" : "近日公開",
+    "login" : {
+        "username" : "ユーザー名",
+        "language" : "言語",
+        "title1" : "ログイン",
+        "error1" : "ユーザー名を入力してください！",
+        "error2" : "言語を選択してください!",
+        "button1" : "ログイン"
+    }
 }
