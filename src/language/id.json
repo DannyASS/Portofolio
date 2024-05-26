@@ -1,0 +1,22 @@
+{
+    "dashboard" : {
+        "Berita1" : {
+            "name" : "Wisudawan Terbaik",
+            "desc" : "Balikpapan – Institut Teknologi Kalimantan saat ini telah memasuki proses wisuda ke-12. Pada wisuda ke-12 kali ini tentunya terdapat mahasiswa/i yang meraih Kegiatan terbanyak dan tertinggi. Peraih SK2PM terbaik diantaranya adalah  Samuel Dharmawan dan Danny Anthonyo Sattu Sailo"
+        },
+        "Berita2" : {
+            "name" : "Go-Live Ya-Hala",
+            "desc" : "Membuat dan menambahkan fitur bahasa Arab ke sistem. AYO by SRC merupakan ekosistem digital yang menghubungkan mitra grosir, toko kelontong, dan pelanggan sebagai solusi digital untuk pengalaman berbelanja yang lebih mudah dan nyaman."
+        },
+        "Berita3" : {
+            "name" : "Pelatihan Node Js",
+            "desc" : "Ikut pelatihan workshop Node.js yang diadakan oleh Dunia Coding"
+        },
+        "Profile" : {
+            "desc" : "Saya Danny Anthonyo seorang junior developer .NET yang berdedikasi dalam mengembangkan aplikasi berbasis web menggunakan teknologi .NET. Saya memiliki pengetahuan tentang javascript, React JS, Jquery, bahasa pemograman C# dan kerangka Kerja ASP.Net. Saya telah mengikuti beberapa project pegembangan perangkat lunak menggunakan teknologi .Net"
+        },
+        "welcome" : "Selamat Datang!",
+        "p1" : "Enjoy Explore My CV...",
+        "h1" : "Aktifitas"
+    }
+}

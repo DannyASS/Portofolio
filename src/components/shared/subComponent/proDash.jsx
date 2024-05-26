@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { LangConfig } from '../../../language/langConfig';
 
 const ProfileDashboard = () => {
     const [motionko, setMotionko] = useState(1);
     const [isExit, setIsExit] = useState(false);
+    const ls = LangConfig().dashboard;
 
     const counterMotion = () => {
         setIsExit(true);
@@ -24,7 +26,7 @@ const ProfileDashboard = () => {
                 <motion.div className='col-4'
                     initial= {{x : 50, opacity: 0}}
                     animate = {{x: -50, opacity : 1}}
-                    transition={{duration: 2}}
+                    transition={{duration: 5}}
                     onAnimationComplete={counterMotion}
                 >
                     <img src='/image/profile.jpg' className='rounded bordered shadow' style={{maxHeight: '240px', width: '240px'}}/>
@@ -39,7 +41,8 @@ const ProfileDashboard = () => {
                                 transition={{duration: 3}}
                                 exit={{y : 10, opacity: 1}}
                             >
-                                Saya Danny Anthonyo seorang junior developer .NET yang berdedikasi dalam mengembangkan aplikasi berbasis web menggunakan teknologi .NET. Saya memiliki pengetahuan tentang javascript, React JS, Jquery, bahasa pemograman C# dan kerangka Kerja ASP.Net. Saya telah mengikuti beberapa project pegembangan perangkat lunak menggunakan teknologi .Net
+                                {/* Saya Danny Anthonyo seorang junior developer .NET yang berdedikasi dalam mengembangkan aplikasi berbasis web menggunakan teknologi .NET. Saya memiliki pengetahuan tentang javascript, React JS, Jquery, bahasa pemograman C# dan kerangka Kerja ASP.Net. Saya telah mengikuti beberapa project pegembangan perangkat lunak menggunakan teknologi .Net */}
+                                {ls.Profile.desc}
                             </motion.p>
                         )}
                 </motion.div>

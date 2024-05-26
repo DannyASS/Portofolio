@@ -1,7 +1,9 @@
 import { Typography } from '@mui/material';
 import { motion } from 'framer-motion';
+import { LangConfig } from '../../../language/langConfig';
 
 const ActivityTrans = ({initialBerita}) => {
+    const ls = LangConfig().dashboard;
     return(
         <motion.div
                 key={"list"}
@@ -17,7 +19,8 @@ const ActivityTrans = ({initialBerita}) => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 5, delay: 5 }}
                     >
-                        Aktifitas
+                        {/* Aktifitas */}
+                        {ls.h1}
                     </motion.h1>
                     {initialBerita.map((item, index) => {
                         return (

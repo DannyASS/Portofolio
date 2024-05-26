@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+      "Berita1": {
+        "name": "Best Graduate",
+        "desc": "Balikpapan - Kalimantan Institute of Technology is currently undergoing its 12th graduation process. In this 12th graduation, there are certainly students who have achieved the most and highest activities. The best SK2PM achievers include Samuel Dharmawan and Danny Anthonyo Sattu Sailo."
+      },
+      "Berita2": {
+        "name": "Go-Live Ya-Hala",
+        "desc": "Creating and adding Arabic language feature to the system. AYO by SRC is a digital ecosystem that connects wholesale partners, grocery stores, and customers as a digital solution for easier and more convenient shopping experience."
+      },
+      "Berita3": {
+        "name": "Node Js Training",
+        "desc": "Participating in Node.js workshop training held by Dunia Coding"
+      },
+      "Profile": {
+        "desc": "I'm Danny Anthonyo, a dedicated junior .NET developer in developing web-based applications using .NET technology. I have knowledge of javascript, React JS, Jquery, C# programming language and ASP.Net Framework. I have participated in several software development projects using .Net technology."
+      },
+      "welcome": "Welcome!",
+      "p1": "Enjoy Exploring My CV...",
+      "h1" : "Activity"
+    }
+}

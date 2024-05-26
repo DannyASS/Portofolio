@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
+import { LangConfig } from '../../../language/langConfig';
 const WelcomeTrans = () => {
+  const ls = LangConfig().dashboard
     return (
         <motion.div
           key="intro"
@@ -14,14 +16,16 @@ const WelcomeTrans = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Selamat Datang!
+            {/* Selamat Datang! */}
+            {ls.welcome}
           </motion.h1>
           <motion.p
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            Enjoy Explore My CV...
+            {/* Enjoy Explore My CV... */}
+            {ls.p1}
           </motion.p>
         </motion.div>
     )
