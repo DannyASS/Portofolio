@@ -70,5 +70,15 @@
         },
         "button1" : "Close",
         "button2" : "Send"
+      },
+      "menu" : {
+          "home" : "Introduction",
+          "profile" : "Profile"
+      },
+      "language" : {
+        "id" : "Indonesian",
+        "en" : "English",
+        "jpn" : "Japan",
+        "title1" : "Language"
       }
 }

@@ -2,7 +2,6 @@ import Idn from './id.json'
 import Eng from'./en.json'
 import Jpn from './jpn.json'
 
-const language = ["indonesia", "Inggris"];
 
 const dataLangue = [
     {
@@ -32,6 +31,20 @@ const LangConfig = () => {
     return dataLangue.find((Item) => Item.code == (bahasa?? 'id')).data;
 }
 
+const language = [
+    {
+        'code' : 'id',
+        'name' : LangConfig().language.id
+    },
+    {
+        'code' : 'en',
+        'name' : LangConfig().language.en
+    },
+    {
+        'code' : 'jpn',
+        'name' : LangConfig().language.jpn
+    },
+];
 
 export {
     language,

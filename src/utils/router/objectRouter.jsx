@@ -4,18 +4,19 @@ import Layout from "../../components/shared/layout"
 import LayoutPage from "../../components/shared/layout";
 import { Person2, Dashboard } from "@mui/icons-material";
 import DashboardPage from "../../pages/dashboard/dashboard";
+import { LangConfig } from "../../language/langConfig";
 
-
+const ls = LangConfig().menu
 export const objectRouter = {
     dashboard : {
-        title : "Home",
+        title : ls.home,
         path : "/",
         element : <DashboardPage />,
         navbar: true,
         icon: <Dashboard />
     },
     profile : {
-        title : "Profile",
+        title : ls.profile,
         path : "/Profile",
         element : <ProfilePage />,
         navbar: true,

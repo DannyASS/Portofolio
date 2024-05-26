@@ -4,13 +4,14 @@ import { convertObjectToArray } from "../../utils/router/objectRouter"
 import { Language, Navigation, Widgets } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { dataLangue } from "../../language/langConfig";
+import { LangConfig, language } from "../../language/langConfig";
 
 const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(false);
     const dataMenu = convertObjectToArray();
     const {Sider} = Layout
-    const LanguageData = dataLangue;
+    const ls = LangConfig().language
+    const LanguageData = language
 
     const handleChangeLanguage = (data) => {
         let codeLang = data;
@@ -35,7 +36,7 @@ const Sidebar = () => {
                 <Menu.SubMenu
                     key={"language"}
                     icon={<Language />}
-                    title={"Language"}
+                    title={ls.title1}
                 >
                     {LanguageData.map((item) => {
                         return (

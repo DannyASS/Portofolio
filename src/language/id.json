@@ -70,5 +70,15 @@
         },
         "button1" : "Tutup",
         "button2" : "Kirim"
+    },
+    "menu" : {
+        "home" : "Pengenalan",
+        "profile" : "Profil"
+    },
+    "language" : {
+      "id" : "Bahasa",
+      "en" : "Inggris",
+      "jpn" : "Jepang",
+      "title1" : "Bahasa"
     }
 }
