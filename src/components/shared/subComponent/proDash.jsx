@@ -27,14 +27,14 @@ const ProfileDashboard = () => {
             transition={{ duration: 1.5, delay : 1 }}
             >
             <motion.div className='row'>
-                <motion.div className='col-xs-4'
+                <motion.div className='col-xs-4 col-md-6'
                     initial= {{x : 50, opacity: 0}}
                     animate = {{x: 0, opacity : 1}}
                     transition={{duration: 2}}
                 >
                     <img src='/image/profile.jpg' className='rounded bordered shadow' style={{maxHeight: '240px', width: '240px'}}/>
                 </motion.div>
-                <motion.div className='col-xs-8 p-3'
+                <motion.div className='col-xs-8 p-3 col-md-6'
                 >
                         {(motionko === 1) &&(
                             <motion.p
