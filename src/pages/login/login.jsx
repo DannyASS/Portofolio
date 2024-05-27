@@ -8,7 +8,7 @@ const LoginPage = () => {
 const ls = LangConfig().login
   return (
         <div>
-            <Row className='loginContent'>
+            <Row className='loginContent' style={{marginLeft: '0px'}}>
                 <Col className='loginCol border rounded shadow' xs={12}>                
                     <Row>
                         <h1 className='h2Login'>{ls.title1}</h1>

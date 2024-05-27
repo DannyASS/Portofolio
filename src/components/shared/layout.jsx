@@ -21,7 +21,7 @@ const LayoutPage = () => {
             <Layout>            
                 {dataOutlet?.navbar && <Sidebar />}                
                 <Layout>
-                    <Content className="p-2 outlet" id="rooting">
+                    <Content className="outlet" id="rooting">
                         <Outlet />
                     </Content>
                 </Layout>
