@@ -84,7 +84,9 @@
       "jpn" : "Jepang",
       "title1" : "Bahasa",
       "button1" : "Kembali",
-      "button2" : "Keluar"
+      "button2" : "Keluar",
+      "tittle2" : "Keluar",
+      "desc1" : "anda yakin mau keluar?"
     },
     "commingSoon" : "Segera Hadir",
     "login" : {
