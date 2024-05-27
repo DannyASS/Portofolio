@@ -78,4 +78,15 @@ button {
     transform: translate(-50%, -50%) scale(4);
     transition: 1.5s ease;
   }
-    
+
+  @media only screen and (max-width: 768px) {
+    .loginCol {
+        max-width: 80%;
+        // height: 40%;
+        font-family: 'Poppins', 'sans-serif';
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+  }

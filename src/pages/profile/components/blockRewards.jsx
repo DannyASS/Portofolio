@@ -59,9 +59,9 @@ const BlockRewards = () => {
                         <Row>
                             {data.map((item,index) => {
                                 return(
-                                    <Col key={index} onClick={() =>handleClickRewards(item,index)} className={'tittleRewards rounded '+ (reward == index? 'tittleRewardsClick' : '')}>
+                                    <Col md={4} xs={6} key={index} onClick={() =>handleClickRewards(item,index)} className={'tittleRewards rounded '+ (reward == index? 'tittleRewardsClick' : '')}>
                                         <EmojiEvents color={reward == index? 'primary' : ''}/>
-                                        <Typography color={reward == index ? theme.palette.primary.dark : theme.palette.primary.main} variant={reward == index ? 'h6' : "button"} display="block" gutterBottom>
+                                        <Typography className="tittle-rewards" color={reward == index ? theme.palette.primary.dark : theme.palette.primary.main} variant={reward == index ? 'h6' : "button"} display="block" gutterBottom>
                                             {item.name}
                                         </Typography>
                                         <Typography color={reward == index? 'light' : ''} variant="caption" display="block" gutterBottom>

@@ -17,7 +17,7 @@ const WelcomeTrans = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             {/* Selamat Datang! */}
-            {`${ls.welcome} ${localStorage.getItem('data')} !`}
+            {`${ls.welcome} ${localStorage.getItem('data')}!`}
           </motion.h1>
           <motion.p
             initial={{ y: -20, opacity: 0 }}

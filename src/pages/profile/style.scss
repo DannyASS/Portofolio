@@ -56,3 +56,11 @@
 // .row .card_skills :hover{
 //     background-color: #00a6fb;
 // }
+@media only screen and (max-width: 768px) {
+    .skills {
+        max-width: 100%;
+    }
+    .tittleRewards {
+        margin-top: 1rem;
+    }
+}

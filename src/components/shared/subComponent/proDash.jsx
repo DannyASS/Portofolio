@@ -13,10 +13,9 @@ const ProfileDashboard = () => {
     const counterMotion = () => {
         setIsExit(true);
         const counter = motionko + 1
-        if(counter == 2) return setMotionko(counter)
         const timeout = setTimeout(() => {                
             setMotionko(counter);
-        }, (counter == 2? 7000 : 5000)   )
+        }, 10000)
         return () => clearTimeout(timeout);
     }
 
@@ -27,24 +26,23 @@ const ProfileDashboard = () => {
             exit={{y: -50, opacity: 0}}
             transition={{ duration: 1.5, delay : 1 }}
             >
-            <motion.div className='row' style={{width : '60%'}}>
-                <motion.div className='col-4'
+            <motion.div className='row'>
+                <motion.div className='col-xs-4'
                     initial= {{x : 50, opacity: 0}}
-                    animate = {{x: -50, opacity : 1}}
-                    transition={{duration: 5}}
-                    onAnimationComplete={counterMotion}
+                    animate = {{x: 0, opacity : 1}}
+                    transition={{duration: 2}}
                 >
                     <img src='/image/profile.jpg' className='rounded bordered shadow' style={{maxHeight: '240px', width: '240px'}}/>
                 </motion.div>
-                <motion.div className='col-8'
-                    style={{textAlign: 'center', justifyContent: 'center', alignItems: 'center', display: 'flex'}}
+                <motion.div className='col-xs-8 p-3'
                 >
-                        {(motionko === 2) &&(
+                        {(motionko === 1) &&(
                             <motion.p
                                 key="1"
+                                className='motionp'
                                 initial= {{y : 50, opacity: 0}}
                                 animate = {{y: 0, opacity : 1}}
-                                transition={{duration: 2, delay :3}}
+                                transition={{duration: 2}}
                                 exit={{y : 10, opacity: 0, transition: {duration : 2, ease: 'easeOut'}}}
                                 onAnimationComplete={counterMotion}
                             >
@@ -52,7 +50,7 @@ const ProfileDashboard = () => {
                                 {ls.Profile.desc}
                             </motion.p>
                         )}
-                        {(motionko === 3) && (
+                        {(motionko === 2) && (
                             <motion.div>
                                 <motion.p
                                     key="2"

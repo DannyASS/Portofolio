@@ -30,13 +30,13 @@ const BlockRiwayat = () => {
                 <Row className="pt-2">
                     {skills.map((item,index) => { 
                         return (
-                            <Col className="mt-3 card_skills" xs={4}>
+                            <Col className="mt-3 card_skills" xs={5} md={3}>
                                 <Card>
                                     <CardContent>
                                         <div className="pt-2">
                                             <img className="skills" src={item.src}></img>
                                         </div>
-                                        <Typography>{item.name}</Typography>
+                                        <Typography variant="caption">{item.name}</Typography>
                                     </CardContent>
                                 </Card>
                             </Col>

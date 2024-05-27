@@ -47,3 +47,23 @@
   border: white;
   color: black;
 }
+
+@media only screen and (max-width: 768px) {
+  .row .col-8{
+    max-height: 40%;
+    width: 100%;
+  }
+
+  .row{
+    width: 100%;
+  }
+
+  .dashboardContent {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+}
