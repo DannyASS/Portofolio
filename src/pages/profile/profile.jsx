@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const ProfilePage = () => {
   return (
-        <Row>
+        <Row style={{marginTop: '0.5rem', marginRight: '0.5rem'}}>
             <Col>
                 <BlockPage />
             </Col>
