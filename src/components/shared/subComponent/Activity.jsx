@@ -25,7 +25,7 @@ const ActivityTrans = ({initialBerita}) => {
                     {initialBerita.map((item, index) => {
                         return (
                             <motion.div 
-                            className='col rounded shadow p-3 m-3 actionCol'
+                            className='col-md-3 rounded shadow p-3 actionCol'
                             initial={{ y: -200, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 5, delay: (1 * index) }}

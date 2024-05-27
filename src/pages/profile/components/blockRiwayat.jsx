@@ -10,7 +10,7 @@ const BlockRiwayat = () => {
     const skills = DataSkills
     const ls = LangConfig().profile
     useEffect(() => {
-        console.log(skills)
+        // console.log(skills)
     },[])
 
     return(

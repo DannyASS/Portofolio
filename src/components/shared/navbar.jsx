@@ -5,15 +5,16 @@ import { Language, Logout, Navigation, Widgets } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { LangConfig, language } from "../../language/langConfig";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 
 const Sidebar = () => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
     const dataMenu = convertObjectToArray();
     const {Sider} = Layout
     const ls = LangConfig().language
     const LanguageData = language
     const [show, setShow] = useState(false)
+    const isMobile = useMediaQuery('(max-width: 768px)')
 
     const handleChangeLanguage = (data) => {
         let codeLang = data;
@@ -34,7 +35,7 @@ const Sidebar = () => {
     }
 
     return(
-        <Sider collapsed={collapsed} className="sideBar">
+        <Sider collapsed={(isMobile? true : collapsed)} className="sideBar">
             <Modal show={show}>
                 <Modal.Header>
                     <Typography variant="h5">{ls.tittle2}</Typography>

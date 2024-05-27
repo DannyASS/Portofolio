@@ -27,7 +27,7 @@ const dataLangue = [
 
 const LangConfig = () => {
     const bahasa = localStorage.getItem("locale");
-    console.log(bahasa)
+    // console.log(bahasa)
     return dataLangue.find((Item) => Item.code == (bahasa?? 'id')).data;
 }
 

@@ -33,6 +33,7 @@
 
 .actionCol {
   width: 500px;
+  margin: 2rem;
 }
 
 .logoDas {
@@ -52,6 +53,13 @@
   .row .col-8{
     max-height: 40%;
     width: 100%;
+  }
+
+  .actionCol {
+    width: 500px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 2rem;
   }
 
   .row{

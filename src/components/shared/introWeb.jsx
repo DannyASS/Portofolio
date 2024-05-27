@@ -22,7 +22,7 @@ const IntroAnimation = ({initialBerita}) => {
   useEffect(() => {
     let counter = isVisible + 1;
     if (isVisible < 5) {
-        console.log("cek deh : ", counter)        
+        // console.log("cek deh : ", counter)        
         const timeout = setTimeout(() => {
             if (counter % 2 == 1) {              
               setCounterTime(counterTime + 1)

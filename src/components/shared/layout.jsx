@@ -15,7 +15,7 @@ const LayoutPage = () => {
         }
     },[getOutlet])
 
-    console.log("outlet :", getOutlet)
+    // console.log("outlet :", getOutlet)
     return(
         <div>
             <Layout>            

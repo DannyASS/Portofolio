@@ -25,7 +25,7 @@ const BlockRewards = () => {
     }
 
     useEffect(()=> {
-        console.log('show : ', show);
+        // console.log('show : ', show);
     },[show])
     return(
         <>    
