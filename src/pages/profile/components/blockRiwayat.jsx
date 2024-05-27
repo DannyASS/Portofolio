@@ -30,7 +30,7 @@ const BlockRiwayat = () => {
                 <Row className="pt-2">
                     {skills.map((item,index) => { 
                         return (
-                            <Col className="mt-3 card_skills" xs={5} md={3}>
+                            <Col className="mt-3 card_skills" xs={6} md={3}>
                                 <Card>
                                     <CardContent>
                                         <div className="pt-2">
