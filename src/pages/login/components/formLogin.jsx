@@ -1,6 +1,6 @@
 
 import { UserOutlined } from '@ant-design/icons';
-import { Form, Input, Select } from 'antd';
+import { Button, Form, Input, Select } from 'antd';
 import '../style.scss'
 import { redirect, useNavigate } from 'react-router-dom';
 import { LangConfig, language } from '../../../language/langConfig';
@@ -46,13 +46,7 @@ const FormLogin = () => {
                 </Select>
             </Form.Item>
             <Form.Item>
-                <button type='submit'><span class="circle1"></span>
-                    <span class="circle2"></span>
-                    <span class="circle3"></span>
-                    <span class="circle4"></span>
-                    <span class="circle5"></span>
-                    <span class="text">{ls.button1}</span>
-                </button>
+                <Button type='primary' htmlType='submit'>{ls.button1}</Button>
             </Form.Item>
         </Form>
     )
