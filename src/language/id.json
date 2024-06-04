@@ -92,7 +92,7 @@
     "login" : {
         "username" : "Nama pengguna",
         "language" : "Bahasa",
-        "title1" : "Masukkan Nama Anda",
+        "title1" : "Masukan Nama Anda",
         "error1" : "Mahon input nama anda!",
         "error2" : "Mohon pilih bahasa",
         "button1" : "Masuk",
