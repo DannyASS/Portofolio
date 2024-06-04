@@ -7,3 +7,45 @@
 .buttonProject :hover{
     background-color: white;
 }
+
+.detailContent{
+    display: flex;
+    align-items: center;
+}
+
+// .cardDesc{
+//     max-width: 90%;
+// }
+
+.posisiData {
+    padding: 0px;
+    text-align: left;
+}
+
+.imgCard{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+}
+
+.descProject:hover{
+    cursor: pointer;
+    background-color: #daedfc;
+}
+
+.dipilih{
+    background-color: #daedfc;
+    box-shadow: 0 0 10px #0070C0;
+}
+
+.posisi {
+    font-size: 18px;
+}
+
+// .cardProject {
+//     // width: 50%;
+// }
+
+// .rowProject{
+//     // max-width: 40%;
+// }

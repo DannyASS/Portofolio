@@ -8,6 +8,7 @@ import { LangConfig } from "../../language/langConfig";
 import MyProject from "../../pages/projects/project";
 import LoginPage from "../../pages/login/login";
 import { getAuthorization } from "../../halpers/storage";
+import DetailProject from "../../pages/projects/component/detailProject";
 
 const ls = LangConfig().menu
 export const objectRouter = {
@@ -47,6 +48,15 @@ export const objectRouter = {
         needAuth : false,
         hideMenu : true
     },
+    projectDetail : {
+        title : 'ProjectDetail',
+        path : "/Project/:id",
+        element : <DetailProject />,
+        navbar: true,
+        needAuth : true,
+        icon: <Web />,
+        hideMenu : true
+    }
 }
 
 export const convertObjectToArray = () => {
