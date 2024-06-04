@@ -1,10 +1,14 @@
+import { LangConfig } from "../../../language/langConfig"
+
+const ls = LangConfig().Project
+
 const projectData = [
     {
         name : "Learning Development System",
-        desc : "By using .Net freamwork (native) technology create a system that is responsible for empowering employee growth and developing their knowledge, skills, and abilities to drive better business performance at PT Astra Honda Motor.",
+        desc : ls.prev1.desc1,
         gambar : '/image/LDSIcon.png',
         at : 'PT Astra Honda Motor',
-        posisi : ['Fullstack', 'Support'],
+        posisi : [ls.prev1.posisi1, ls.prev1.posisi2],
         frameworks : [
             {
                 name : ".Net",
@@ -22,10 +26,10 @@ const projectData = [
     },
     {
         name : "Pembimbing Angkatan",
-        desc : "Web development that can help academic supervisors in monitoring and helping students who have obstacles that cause student grades and achievements to be hampered at Bina Nusantara University.",
+        desc : ls.prev2.desc1,
         gambar : '/image/PAIcon.png',
         at : 'Universitas Bina Nusantara',
-        posisi : ['Fullstack'],
+        posisi : [ls.prev2.posisi1],
         frameworks : [
             {
                 name : ".Net",
@@ -51,10 +55,10 @@ const projectData = [
     },
     {
         name : "Ya-Hala (AYO SRC)",
-        desc : "Create and add Arabic language features to the system. AYO by SRC is a digital ecosystem that connects wholesale partners, grocery stores, and customers as a digital solution for an easier and more convenient shopping experience.",
+        desc : ls.prev3.desc1,
         gambar : '/image/AYOIcon.png',
         at : 'PT HM Sampoerna Tbk',
-        posisi : ['Fullstack'],
+        posisi : [ls.prev3.posisi1],
         frameworks : [
             {
                 name : "PHP",
@@ -79,10 +83,10 @@ const projectData = [
 const personalProject = [
     {
         name : "My Project Web CV",
-        desc : "Web static untuk cv dan implementasi skill",
+        desc : ls.pers1.desc1,
         gambar : '/image/LDSIcon.png',
         at : '-',
-        posisi : ['Frontend'],
+        posisi : [ls.pers1.posisi1],
         frameworks : [
             {
                 name : "React Js",
@@ -94,12 +98,12 @@ const personalProject = [
 
 const dataMainProject = [
     {
-        name : 'Prefesional Project',
+        name : ls.label7,
         gambar : '/image/LDSIcon.png',
         data : projectData
     },
     {
-        name : 'Personal Project',
+        name : ls.label8,
         gambar : '/image/PAIcon.png',
         data : personalProject
     }

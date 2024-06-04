@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 import { objectRouter } from "../../utils/router/objectRouter"
 
 const MyProject = () => {
-    const ls = LangConfig().commingSoon
+    const ls = LangConfig().Project
     const dataProject = dataMainProject
     const navigate = useNavigate()
 
@@ -18,7 +18,7 @@ const MyProject = () => {
     return(
         <Container className="dashboardContent">
             <Container className="projectFont">
-                <h3 className="pb-3">Perfesional Project</h3>
+                <h3 className="pb-3">{ls.label1}</h3>
                 <Row className="mt-2 rowProject">
                     {dataProject.map((item, indeks) => {
                         return (
@@ -31,7 +31,7 @@ const MyProject = () => {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button onClick={() => handleGoToDetail(item,indeks)} className="buttonProject" size="small">Go To Detail</Button>
+                                        <Button onClick={() => handleGoToDetail(item,indeks)} className="buttonProject" size="small">{ls.label2}</Button>
                                     </CardActions>
                                 </Card>
                             </Col>

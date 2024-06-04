@@ -96,5 +96,31 @@
         "error1" : "Please input your Username!",
         "error2" : "Please select language",
         "button1" : "Log In"
+    },
+    "Project" : {
+      "prev1" : {
+        "desc1" : "By using .Net freamwork (native) technology create a system that is responsible for empowering employee growth and developing their knowledge, skills, and abilities to drive better business performance at PT Astra Honda Motor.",
+        "posisi1" : "Fullstack Developer",
+        "posisi2" : "Support Developer"
+      },
+      "prev2" : {
+        "desc1" : "Web development that can help academic supervisors in monitoring and helping students who have obstacles that cause student grades and achievements to be hampered at Bina Nusantara University.",
+        "posisi1" : "Fullstack Developer"
+      },
+      "prev3" : {
+        "desc1" : "Create and add Arabic language features to the system. AYO by SRC is a digital ecosystem that connects wholesale partners, grocery stores, and customers as a digital solution for an easier and more convenient shopping experience.",
+        "posisi1" : "Fullstack Developer"
+      },
+      "pers1" : {
+        "desc1" : "Web static for cv and skill implementation.",
+        "posisi1" : "Frontend"
+      },
+      "label1" : "My Project",
+      "label2" : "Go To Detail",
+      "label3" : "Description",
+      "label4" : "Position",
+      "label5" : "Frameworks",
+      "label7" : "Profesional Project",
+      "label8" : "Personal Project"
     }
 }

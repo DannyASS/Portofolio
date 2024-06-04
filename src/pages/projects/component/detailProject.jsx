@@ -3,8 +3,10 @@ import { useEffect, useState } from "react"
 import { Col, Row } from "react-bootstrap"
 import { useLocation } from "react-router-dom"
 import '../style.scss'
+import { LangConfig } from "../../../language/langConfig"
 
 const DetailProject = () => {
+    const ls = LangConfig().Project;
     const data = useLocation().state.data;
     const [pilih, setPilih] = useState(data? 0 : null);
     const [dataPilih, setDataPilih] = useState(data? data[0] : null);
@@ -43,11 +45,11 @@ const DetailProject = () => {
                 <div hidden={dataPilih? false : true}>                    
                     <Container className="p-2 shadow rounded cardDesc">        
                         <Row>
-                            <h6>Deskripsi</h6>
+                            <h6>{ls.label3}</h6>
                             <p>{dataPilih?.desc}</p>
                         </Row>
                         <Row>
-                            <h6>Frameworks</h6>
+                            <h6>{ls.label5}</h6>
                             {dataPilih?.frameworks.map((Item) => {
                                 return(
                                     <Col md={4} xs={4}>
@@ -58,7 +60,7 @@ const DetailProject = () => {
                             })}
                         </Row>
                         <Row>
-                            <h6>Posisi</h6>
+                            <h6>{ls.label4}</h6>
                             <Container className="posisiData">
                                 {dataPilih?.posisi.map((item) => {
                                     return(

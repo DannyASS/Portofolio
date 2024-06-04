@@ -99,5 +99,31 @@
         "tittle2" : "Keluar",
         "desc1" : "Apakah Anda yakin ingin keluar?"
 
+    },
+    "Project" : {
+      "prev1" : {
+        "desc1" : "Dengan menggunakan teknologi .Net freamwork (native) menciptakan sebuah sistem yang bertanggung jawab dalam memberdayakan pertumbuhan karyawan dan mengembangkan pengetahuan, keterampilan, dan kemampuan mereka untuk mendorong kinerja bisnis yang lebih baik di PT Astra Honda Motor.",
+        "posisi1" : "Fullstack Developer",
+        "posisi2" : "Support Developer"
+      },
+      "prev2" : {
+        "desc1" : "Pengembangan web yang dapat membantu dosen pembimbing akademik dalam memonitoring dan membantu mahasiswa yang memiliki kendala yang menyebabkan nilai dan prestasi mahasiswa terhambat di Universitas Bina Nusantara.",
+        "posisi1" : "Fullstack Developer"
+      },
+      "prev3" : {
+        "desc1" : "Membuat dan menambahkan fitur bahasa Arab ke dalam sistem. AYO by SRC adalah ekosistem digital yang menghubungkan mitra grosir, toko grosir, dan pelanggan sebagai solusi digital untuk pengalaman berbelanja yang lebih mudah dan nyaman.",
+        "posisi1" : "Fullstack Developer"
+      },
+      "pers1" : {
+        "desc1" : "Web statis untuk cv dan implementasi keterampilan.",
+        "posisi1" : "Frontend"
+      },
+      "label1" : "Proyek",
+      "label2" : "lihat detail",
+      "label3" : "Deskripsi",
+      "label4" : "Posisi",
+      "label5" : "Frameworks",
+      "label7" : "Proyek Profesional",
+      "label8" : "Proyek Pribadi"
     }
 }
