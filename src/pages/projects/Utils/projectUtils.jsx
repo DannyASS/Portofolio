@@ -78,7 +78,7 @@ const projectData = [
 
 const personalProject = [
     {
-        name : "My Cv",
+        name : "My Project Web CV",
         desc : "Web static untuk cv dan implementasi skill",
         gambar : '/image/LDSIcon.png',
         at : '-',
