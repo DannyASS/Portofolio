@@ -92,8 +92,8 @@
     "login" : {
         "username" : "Nama pengguna",
         "language" : "Bahasa",
-        "title1" : "Login",
-        "error1" : "Mahon input nama pengguna!",
+        "title1" : "Masukkan Nama Anda",
+        "error1" : "Mahon input nama anda!",
         "error2" : "Mohon pilih bahasa",
         "button1" : "Masuk",
         "tittle2" : "Keluar",

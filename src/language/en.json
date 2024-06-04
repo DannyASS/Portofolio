@@ -92,8 +92,8 @@
     "login" : {
         "username" : "Username",
         "language" : "Language",
-        "title1" : "Login",
-        "error1" : "Please input your Username!",
+        "title1" : "Input your name",
+        "error1" : "Please input your name!",
         "error2" : "Please select language",
         "button1" : "Log In"
     },
