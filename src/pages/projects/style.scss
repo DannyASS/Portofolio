@@ -19,7 +19,8 @@
 
 .posisiData {
     padding: 0px;
-    text-align: left;
+    text-align: center;
+    align-items: center;
 }
 
 .imgCard{
@@ -39,7 +40,12 @@
 }
 
 .posisi {
-    font-size: 18px;
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+}
+
+.lamaproject {
+    text-align: center;
 }
 
 // .cardProject {

@@ -8,6 +8,7 @@ const projectData = [
         desc : ls.prev1.desc1,
         gambar : '/image/LDSIcon.png',
         at : 'PT Astra Honda Motor',
+        lama : 'November 2022 - Juni 2024',
         posisi : [ls.prev1.posisi1, ls.prev1.posisi2],
         frameworks : [
             {
@@ -29,6 +30,7 @@ const projectData = [
         desc : ls.prev2.desc1,
         gambar : '/image/PAIcon.png',
         at : 'Universitas Bina Nusantara',
+        lama : 'Mei 2023 - Agustus 2023',
         posisi : [ls.prev2.posisi1],
         frameworks : [
             {
@@ -58,6 +60,7 @@ const projectData = [
         desc : ls.prev3.desc1,
         gambar : '/image/AYOIcon.png',
         at : 'PT HM Sampoerna Tbk',
+        lama : 'September 2023 - January 2024',
         posisi : [ls.prev3.posisi1],
         frameworks : [
             {

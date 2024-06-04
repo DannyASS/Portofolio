@@ -64,9 +64,15 @@ const DetailProject = () => {
                             <Container className="posisiData">
                                 {dataPilih?.posisi.map((item) => {
                                     return(
-                                        <li className="posisi">{item}</li>
+                                        <p className="posisi">{item}</p>
                                     )
                                 })}
+                            </Container>
+                        </Row>
+                        <Row>
+                            <h6>{dataPilih.lama}</h6>
+                            <Container className="lamaproject">
+                                <p>{dataPilih.lama}</p>
                             </Container>
                         </Row>
                     </Container>
