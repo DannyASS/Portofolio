@@ -89,6 +89,7 @@ const personalProject = [
         desc : ls.pers1.desc1,
         gambar : '/image/LDSIcon.png',
         at : '-',
+        lama : 'Mei 2024 - Until Now',
         posisi : [ls.pers1.posisi1],
         frameworks : [
             {

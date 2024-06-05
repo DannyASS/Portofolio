@@ -72,7 +72,7 @@ const DetailProject = () => {
                         <Row>
                             <h6>{ls.label9}</h6>
                             <Container className="lamaproject">
-                                <p>{dataPilih.lama}</p>
+                                <p>{dataPilih?.lama}</p>
                             </Container>
                         </Row>
                     </Container>
