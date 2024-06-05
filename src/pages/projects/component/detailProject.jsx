@@ -32,7 +32,7 @@ const DetailProject = () => {
                     <Row>
                         {data.map((item, indeks) => {
                             return(
-                                <Col key={indeks} md={12} xs={6} onClick={() => handlePilih(indeks)} className={`p-2 rounded cardDesc descProject ${pilih == indeks? 'dipilih' : 'shadow'}`}>        
+                                <Col key={indeks} md={12} xs={6} onClick={() => handlePilih(indeks)} className={`p-2 rounded descProject ${pilih == indeks? 'dipilih' : 'shadow'}`}>        
                                         <h4 className="tittlePilih">{item.name}</h4>
                                         <Typography variant="content">{item.at}</Typography>
                                 </Col>

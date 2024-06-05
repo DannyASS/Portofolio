@@ -64,10 +64,23 @@
     .descProject{
         font-size: 80%;
         margin: 0.5rem;
-        width: 40%;
+        width: 42%;
     }
 
     h4, .col .tittlePilih {
+        font-size: 80%;
+    }
+
+    .cardDesc{
+        width: 70%;
+        font-size: 80%;
+    }
+
+    .skills {
+        width: 50px;
+    }
+
+    p, .posisi {
         font-size: 80%;
     }
 }
