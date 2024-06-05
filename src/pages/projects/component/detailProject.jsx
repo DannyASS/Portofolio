@@ -27,21 +27,21 @@ const DetailProject = () => {
     },[])
     return(
         <Row className="projectFont">
-            <Col md="7" xs="12">
+            <Col md={{order : 'first', span : '6'}} xs={{order : 'last', span : '12'}}>
                 <div>
-                    {data.map((item, indeks) => {
-                        return(
-                            <Row className="mt-3 mb-3 p-3" key={indeks}>
-                                <Col onClick={() => handlePilih(indeks)} className={`p-2 rounded cardDesc descProject ${pilih == indeks? 'dipilih' : 'shadow'}`}>        
-                                    <Typography variant="h4">{item.name}</Typography>
-                                    <Typography variant="content">{item.at}</Typography>
+                    <Row>
+                        {data.map((item, indeks) => {
+                            return(
+                                <Col key={indeks} md={12} xs={6} onClick={() => handlePilih(indeks)} className={`p-2 rounded cardDesc descProject ${pilih == indeks? 'dipilih' : 'shadow'}`}>        
+                                        <h4 className="tittlePilih">{item.name}</h4>
+                                        <Typography variant="content">{item.at}</Typography>
                                 </Col>
-                            </Row>
-                        )
-                    })}                    
+                            )
+                        })}
+                    </Row>                    
                 </div>
             </Col>
-            <Col md="5" xs="12" className="p-2">
+            <Col md={{order : 'last', span : '6'}} xs={{order : 'first', span : '12'}} className="p-2">
                 <div hidden={dataPilih? false : true}>                    
                     <Container className="p-2 shadow rounded cardDesc">        
                         <Row>

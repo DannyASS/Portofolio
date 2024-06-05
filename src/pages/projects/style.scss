@@ -34,6 +34,10 @@
     background-color: #daedfc;
 }
 
+.descProject{
+    margin-top: 2rem;
+}
+
 .dipilih{
     background-color: #daedfc;
     box-shadow: 0 0 10px #0070C0;
@@ -55,3 +59,15 @@
 // .rowProject{
 //     // max-width: 40%;
 // }
+
+@media only screen and (max-width: 768px) {
+    .descProject{
+        font-size: 80%;
+        margin: 0.5rem;
+        width: 40%;
+    }
+
+    h4, .col .tittlePilih {
+        font-size: 80%;
+    }
+}
