@@ -2,7 +2,7 @@ import { Layout, Menu } from "antd"
 import { Button, Container, Modal } from "react-bootstrap"
 import { convertObjectToArray } from "../../utils/router/objectRouter"
 import { Language, Logout, Navigation, Widgets } from "@mui/icons-material";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { useState } from "react";
 import { LangConfig, language } from "../../language/langConfig";
 import { Typography, useMediaQuery } from "@mui/material";
@@ -15,6 +15,7 @@ const Sidebar = () => {
     const LanguageData = language
     const [show, setShow] = useState(false)
     const isMobile = useMediaQuery('(max-width: 768px)')
+    const navigate = useNavigate();
 
     const handleChangeLanguage = (data) => {
         let codeLang = data;
@@ -24,10 +25,7 @@ const Sidebar = () => {
     }
 
     const hanldeLogout = () => {
-        localStorage.removeItem('data')
-        localStorage.setItem('locale', 'id')
-        setShow(false)
-        window.location.reload();
+        navigate('/Outer');
     }
 
     const logoutModal = () => {

@@ -123,5 +123,9 @@
       "label7" : "Profesional Project",
       "label8" : "Personal Project",
       "label9" : "Project Duration"
-    }
+    }, 
+    "Outer" : {
+      "goodbye" : "Thank you for visiting ",
+      "p1" : "All our dreams can come true, if we have the courage to pursue them. - Walt Disney"
+  }
 }

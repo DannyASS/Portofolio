@@ -9,6 +9,7 @@ import MyProject from "../../pages/projects/project";
 import LoginPage from "../../pages/login/login";
 import { getAuthorization } from "../../halpers/storage";
 import DetailProject from "../../pages/projects/component/detailProject";
+import OuterPage from "../../pages/outer/outer";
 
 const ls = LangConfig().menu
 export const objectRouter = {
@@ -53,6 +54,15 @@ export const objectRouter = {
         path : "/Project/:id",
         element : <DetailProject />,
         navbar: true,
+        needAuth : true,
+        icon: <Web />,
+        hideMenu : true
+    },
+    outerPage : {
+        title : 'OuterPage',
+        path : "/Outer",
+        element : <OuterPage />,
+        navbar: false,
         needAuth : true,
         icon: <Web />,
         hideMenu : true

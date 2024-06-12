@@ -126,5 +126,9 @@
       "label7" : "Proyek Profesional",
       "label8" : "Proyek Pribadi",
       "label9" : "Lama Proyek"
+    },
+    "Outer" : {
+        "goodbye" : "Terima kasih atas kunjungannya ",
+        "p1" : "Semua mimpi kita bisa menjadi kenyataan, jika kita memiliki keberanian untuk mengejarnya. - Walt Disney"
     }
 }
