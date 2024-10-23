@@ -90,12 +90,12 @@
     },
     "commingSoon" : "近日公開",
     "login" : {
-        "username" : "ユーザー名",
+        "username" : "訪問者名",
         "language" : "言語",
-        "title1" : "名前を入力",
+        "title1" : "ようこそ",
         "error1" : "お名前を入力してください！",
         "error2" : "言語を選択してください!",
-        "button1" : "ログイン"
+        "button1" : "履歴書を見る"
     },
     "Project" : {
       "prev1" : {

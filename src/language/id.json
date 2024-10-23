@@ -90,12 +90,12 @@
     },
     "commingSoon" : "Segera Hadir",
     "login" : {
-        "username" : "Nama pengguna",
+        "username" : "Nama pengunjung",
         "language" : "Bahasa",
-        "title1" : "Masukan Nama Anda",
+        "title1" : "Selamat datang",
         "error1" : "Mahon input nama anda!",
         "error2" : "Mohon pilih bahasa",
-        "button1" : "Masuk",
+        "button1" : "lihat CV",
         "tittle2" : "Keluar",
         "desc1" : "Apakah Anda yakin ingin keluar?"
 

@@ -90,12 +90,12 @@
     },
     "commingSoon" : "Coming Soon",
     "login" : {
-        "username" : "Username",
+        "username" : "guest name",
         "language" : "Language",
-        "title1" : "Input your name",
+        "title1" : "Welcome",
         "error1" : "Please input your name!",
         "error2" : "Please select language",
-        "button1" : "Log In"
+        "button1" : "See CV"
     },
     "Project" : {
       "prev1" : {
